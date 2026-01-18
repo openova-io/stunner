@@ -9,7 +9,7 @@
 Need WebRTC support for real-time communication that:
 - Handles STUN/TURN NAT traversal
 - Works in Kubernetes environments
-- Integrates with Istio service mesh
+- Integrates with Cilium Service Mesh
 - Supports media server backends
 
 ## Decision
@@ -46,7 +46,7 @@ flowchart TB
 |-----------|------------------|
 | NAT traversal | Built-in TURN relay |
 | K8s networking | Gateway API native |
-| Service mesh | Works with Istio |
+| Service mesh | Works with Cilium |
 | Scalability | Horizontal pod scaling |
 
 ## Features
@@ -213,5 +213,5 @@ flowchart TB
 
 ## Related
 
-- [ADR-ISTIO-SERVICE-MESH](../../istio/docs/ADR-ISTIO-SERVICE-MESH.md)
+- [ADR-CILIUM-SERVICE-MESH](../../cilium/docs/ADR-CILIUM-SERVICE-MESH.md)
 - [SPEC-PLATFORM-TECH-STACK](../../handbook/docs/specs/SPEC-PLATFORM-TECH-STACK.md)
